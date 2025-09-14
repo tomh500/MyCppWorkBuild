@@ -25,7 +25,7 @@ jobs:
     - name: Place Minecraft 1.7.10 jar
       run: |
         mkdir -p ~/.gradle/caches/minecraft/net/minecraft/minecraft/1.7.10
-        cp minecraft_jars/1.7.10.jar ~/.gradle/caches/minecraft/net/minecraft/minecraft/1.7.10/minecraft-1.7.10.jar
+        cp ./1.7.10.jar ~/.gradle/caches/minecraft/net/minecraft/minecraft/1.7.10/minecraft-1.7.10.jar
 
     - name: Build Mod
       run: ./gradlew build -Dfml.doDownload=false
